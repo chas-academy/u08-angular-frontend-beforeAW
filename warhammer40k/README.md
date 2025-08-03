@@ -1,59 +1,57 @@
-# Warhammer40k
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.11.
+# Warhammer 40k Angular Frontend
 
-## Development server
+## Description
+This is a modern Angular 19 application for managing Warhammer 40k data, including factions, subfactions, figures, units, weapons, weapon profiles, abilities, and keywords. The app uses Tailwind CSS for styling and provides full CRUD functionality via modal forms.
 
-To start a local development server, run:
+## Installation
+1. Clone the project:
+   ```bash
+   git clone <repo-url>
+   cd warhammer40k
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm start
+   ```
+4. Open the app in your browser at `http://localhost:4200`
 
-```bash
-ng serve
-```
+## Features
+- CRUD for all Warhammer 40k entities
+- Modal-based forms for adding and editing
+- Dropdowns for related entities
+- Navigation via Angular Router
+- Tailwind CSS for responsive and modern design
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Getting Started as a New Developer
+To quickly get familiar with the project:
 
-## Code scaffolding
+1. **Start with `src/app/pages/`**
+   - Each page corresponds to an entity (e.g., `factions.page.ts`, `weapons.page.ts`).
+   - Pages use components from `src/app/components/`.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+2. **Check the components in `src/app/components/`**
+   - Here you'll find UI logic and modal forms (e.g., `weapons.component.ts`).
 
-```bash
-ng generate component component-name
-```
+3. **API logic is in `src/app/services/`**
+   - Each service handles CRUD operations against the backend API.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+4. **Routing and configuration**
+   - See `app.routes.ts` for page navigation.
+   - See `app.config.ts` for Angular providers.
 
-```bash
-ng generate --help
-```
+5. **Adding functionality**
+   - Add new entities by creating a service, component, and page.
+   - Follow the pattern used for existing entities.
 
-## Building
+## Tips
+- Start by reading through a page and its component.
+- Try adding or editing an entity via the UI to understand the flow.
+- Use Angular CLI to generate new components and services.
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Contact
+For questions, contact the project owner or create an issue in the GitHub repo.
